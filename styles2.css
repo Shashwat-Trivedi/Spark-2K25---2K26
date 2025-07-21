@@ -1,0 +1,258 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', Helvetica, sans-serif;
+    background-color: #111111;
+    color: white;
+    overflow-x: hidden;
+}
+
+.bg-dark {
+    background-color: #111111;
+}
+
+/* Website container */
+.website-container {
+    background-color: #111111;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+}
+
+.website-content {
+    background-color: #111111;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1600px;
+    position: relative;
+}
+
+
+/* Divider section */
+.divider-section {
+    width: 100%;
+    position: relative;
+}
+
+.divider-container {
+    height: 162px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+/* Second Divider */
+#second-divider {
+    height: 64px ;
+}
+
+/* Divider with "It all starts with a" text */
+#third-divider {
+    height: 66px;
+}
+
+/* Spark Title Section */
+#fourth-divider {
+    height: 160px;
+}
+
+/* Discription Section */
+#fifth-divider {
+    height: 78.09px;
+}
+
+/* Button Row */
+#sixth-divider {
+    height: 89.91px;
+}
+
+.divider-left-border,
+.divider-right-border {
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 129, 42, 0.15);
+    flex: 1;
+}
+
+.divider-left-icon,
+.divider-right-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 66px;
+    border-left: 1px solid rgba(255, 129, 42, 0.15);
+    border-bottom: 1px solid rgba(255, 129, 42, 0.15);
+}
+
+.divider-right-icon {
+    border-left: none;
+    border-right: 1px solid rgba(255, 129, 42, 0.15);
+}
+
+
+
+.divider-center {
+    width: 100%;
+    height: 100%;
+    max-width: 540px;
+     display: flex;
+     justify-content: center;
+align-items: center;
+    border-left: 1px solid rgba(255, 129, 42, 0.15);
+    border-right: 1px solid rgba(255, 129, 42, 0.15);
+    border-bottom: 1px solid rgba(255, 129, 42, 0.15);
+    position: relative;
+}
+
+.shape-icon-wrapper {
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 17px;
+    background: #111111;
+    position: relative;
+}
+
+.shape-icon-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    background: linear-gradient(90deg, rgba(255, 129, 42, 0.2) 0%, rgba(153, 77, 25, 0.2) 100%);
+    border-radius: inherit;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    -webkit-mask-composite: xor;
+}
+
+
+
+.divider-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 24px;
+}
+
+.gradient-line-left,
+.gradient-line-right {
+    width: 88px;
+    height: 1px;
+    border-radius: 100px;
+}
+
+.gradient-line-left {
+    background: linear-gradient(90deg, rgba(211, 135, 255, 0) 0%, rgba(255, 129, 42, 1) 100%);
+}
+
+.gradient-line-right {
+    background: linear-gradient(270deg, rgba(211, 135, 255, 0) 0%, rgba(255, 129, 42, 1) 100%);
+}
+
+.divider-text {
+    font-weight: normal;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 17.9px;
+    white-space: nowrap;
+}
+
+/* SPARK title section */
+
+.spark-center {
+    position: relative;
+    width: 100%;
+    max-width: 540px;
+    height: 160px;
+    border-left: 1px solid rgba(255, 129, 42, 0.15);
+    border-right: 1px solid rgba(255, 129, 42, 0.15);
+    border-bottom: 1px solid rgba(255, 129, 42, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.spark-title {
+    font-weight: 600;
+    color: white;
+    font-size: 144px;
+    text-align: center;
+    letter-spacing: 4px;
+    line-height: 179.2px;
+    white-space: nowrap;
+}
+
+/* Corner dots */
+.corner-dot {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 1.5px;
+}
+
+.top-left {
+    top: -2px;
+    left: -2px;
+    background-color: #d387ff;
+}
+
+.top-right {
+    top: -2px;
+    right: -2px;
+    background-color: #d387ff;
+}
+
+.bottom-right {
+    bottom: -2px;
+    right: -2px;
+    background-color: #d387ff;
+}
+
+.bottom-left {
+    bottom: -2px;
+    left: -2px;
+    background-color: #d387ff;
+}
+
+/* Hero Description */
+#hero-discription {
+    flex-direction: column;
+}
+
+.description-first-line,
+.description-second-line {
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.italic {
+    color: #FFF;
+font-family: "Instrument Serif";
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 140%;
+}
