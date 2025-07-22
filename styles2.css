@@ -55,7 +55,7 @@ body {
 
 /* Second Divider */
 #second-divider {
-    height: 64px ;
+    height: 64px;
 }
 
 /* Divider with "It all starts with a" text */
@@ -108,9 +108,9 @@ body {
     width: 100%;
     height: 100%;
     max-width: 540px;
-     display: flex;
-     justify-content: center;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-left: 1px solid rgba(255, 129, 42, 0.15);
     border-right: 1px solid rgba(255, 129, 42, 0.15);
     border-bottom: 1px solid rgba(255, 129, 42, 0.15);
@@ -250,9 +250,42 @@ align-items: center;
 
 .italic {
     color: #FFF;
-font-family: "Instrument Serif";
+    font-family: "Instrument Serif";
     font-size: 20px;
     font-style: italic;
     font-weight: 400;
     line-height: 140%;
+}
+
+.divider-center-button {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #FFF;
+}
+
+.gradient-button {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    border-radius: 8px;
+    border: 0.75px solid #FFF;
+    background: linear-gradient(3deg, #E13E00 2.64%, #FF812A 97.4%);
+    mix-blend-mode: plus-lighter;
+}
+
+.outline-button {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 0.75px solid #FFF;
+    mix-blend-mode: plus-lighter;
 }
