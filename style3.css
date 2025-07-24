@@ -733,6 +733,21 @@ body {
     }
     .qr-wrapper{
         min-width: 350px;
+        flex-direction: column;
+    }
+    .qr-text-button-wrapper{
+        align-items: center;
+        
+    }
+    .qr-button{
+        width: 100%;
+    }
+    .qr-barcode{
+        width: 100%;
+    }
+    .qr-code-image{
+        width: 100%;
+        height: auto;
     }
 }
 
