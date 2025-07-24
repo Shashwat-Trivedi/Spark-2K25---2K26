@@ -70,15 +70,13 @@ body {
 
 
 
-.fix-width-of-icon{
+
+
+/* hero section start here */
+
+.fix-width-of-icon {
     min-width: 60px;
 }
-
-
-
-
-/* just above index 2 css doing css for hero section */
-
 
 .hero-section {
     width: 100vw;
@@ -104,6 +102,7 @@ body {
     grid-template-columns: 0.1fr 1fr .1fr;
 
 }
+
 
 .divider-middle-content {
     border-right: 1px solid rgba(255, 129, 42, 0.15);
@@ -134,16 +133,13 @@ body {
     /* 179.2px */
     letter-spacing: 4px;
 }
+
 @media (max-width: 1360px) {
-    .spark-title{
+    .spark-title {
         font-size: 100px;
     }
 }
-@media (max-width: 600px) {
-    .spark-title{
-        font-size: 80px;
-    }
-}
+
 
 .description-first-line,
 .description-second-line {
@@ -176,16 +172,18 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: 100%;
-    /* 16px */
     display: flex;
     padding: 12px 24px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     border-radius: 8px;
     border: 0.75px solid #FFF;
     background: linear-gradient(3deg, #E13E00 2.64%, #FF812A 97.4%);
-    mix-blend-mode: plus-lighter;
+}
+
+.resource-button {
+    background-color: #111111;
+    border: 0;
 }
 
 .gradient-line-wraper {
@@ -206,6 +204,79 @@ body {
 .gradient-line-right {
     background: linear-gradient(270deg, rgba(211, 135, 255, 0) 0%, rgba(255, 129, 42, 1) 100%);
 }
+
+.oss-button-style {
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.spark-icon {
+    border: 1px solid rgba(255, 129, 42, 0.15);
+    margin: 30px;
+    width: max-content;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+
+
+@media (max-width: 600px) {
+    .spark-title {
+        font-size: 60px;
+    }
+
+    .divider-center {
+        min-width: 350px;
+    }
+
+    .gradient-line-left,
+    .gradient-line-right {
+        width: 50px;
+    }
+
+    .divider-text {
+        font-size: 10px;
+        text-size-adjust: 100%;
+        text-wrap: nowrap;
+    }
+
+    .gradient-line-wraper {
+        gap: 6px;
+    }
+
+    .gradient-button {
+        font-size: 16px;
+        /* font-weight: 400; */
+    }
+
+    .oss-button-style {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .gradient-button {
+        width: 80%;
+    }
+
+    .oss-notes-button {
+        width: 80%;
+    }
+}
+
+/* hero section ends here */
+
+
+
+
+
+
+
+
+
+
+/* here start hero image section */
+
 
 .hero-image-section {
     width: 100vw;
@@ -257,6 +328,7 @@ body {
 }
 
 
+/* here ends hero image section */
 
 
 
@@ -274,8 +346,11 @@ body {
 
 
 
-/* just above index 2 css */
 
+
+
+
+/* about section start here */
 
 
 
@@ -382,6 +457,30 @@ body {
     top: -2px;
     right: -2px;
 }
+
+@media (max-width:600px) {
+    .shape-icon-wrapper{
+        min-width: 350px;
+    }
+    .about-spark-card{
+        min-width: 350px;
+    }
+}
+
+/* about section ends here here */
+
+
+
+
+
+
+
+
+
+
+/* here starts about detail timeline section */
+
+
 
 .about-details-section {
     /* border: 2px solid purple; */
@@ -532,25 +631,36 @@ body {
     /* 22.4px */
 }
 
-.oss-button-style {
-    gap: 16px;
-    flex-wrap: wrap;
-}
 
-@media (max-width: 500px) {
-    .oss-button-style {
-        flex-direction: column;
-        width: 100%;
+@media (max-width:600px) {
+    .timeline-header-content{
+        min-width: 350px;
     }
-
-    .gradient-button {
-        width: 80%;
+    .timeline-content{
+        min-width: 350px;
     }
-
-    .oss-notes-button {
-        width: 80%;
+    .timeline-icon{
+        display: none;
     }
 }
+
+
+/* about detail section timeline ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* qr container start here */
 
 .qr-container {
     width: 100vw;
@@ -603,9 +713,36 @@ body {
     background: linear-gradient(3deg, #E13E00 2.64%, #FF812A 97.4%);
 
 }
+.gap-seprator-between-timeline {
+    min-height: 200px;
+    border-top: 1px solid rgba(255, 129, 42, 0.15);
+    border-bottom: 1px solid rgba(255, 129, 42, 0.15);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+
+}
 
 
-.qr-barcode {}
+@media (max-width:600px) {
+    .shape-icon-wrapper{
+        min-width: 350px;
+    }
+    .about-spark-card {
+        min-width: 350px;
+    }
+    .qr-wrapper{
+        min-width: 350px;
+    }
+}
+
+
+
+/* qr container ends here */
+
+
+
+
 
 
 /* faq section start here */
@@ -685,4 +822,28 @@ body {
 .faq-button {
     background-color: #111;
     border: 0;
+}
+.timeline-content-faq {
+    border-left: 1px solid rgba(255, 129, 42, 0.15);
+    border-right: 1px solid rgba(255, 129, 42, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 500px;
+}
+.gap-seprator-between-timeline {
+    min-height: 200px;
+    border-top: 1px solid rgba(255, 129, 42, 0.15);
+    border-bottom: 1px solid rgba(255, 129, 42, 0.15);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+
+}
+
+@media (max-width:600px){
+    .timeline-content-faq{
+        min-width: 350px;
+    }
 }
