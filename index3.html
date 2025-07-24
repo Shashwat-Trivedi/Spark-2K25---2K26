@@ -15,14 +15,14 @@
         <div class="divider-section">
             <div class="divider-left-border"></div>
             <div class="divider-center">
-                <div class="divider-left-icon">
+                <div class="divider-left-icon fix-width-of-icon">
                 </div>
                 <div class="divider-middle-content spark-icon-container">
                     <div class="spark-icon">
                         <img src="./Assets/First-Vector.svg" alt="">
                     </div>
                 </div>
-                <div class="divider-right-icon">
+                <div class="divider-right-icon fix-width-of-icon">
                 </div>
             </div>
             <div class="divider-right-border"></div>
@@ -32,9 +32,9 @@
         <div class="divider-section" style="height: 65px;">
             <div class="divider-left-border"></div>
             <div class="divider-center">
-                <div class="divider-left-icon"></div>
+                <div class="divider-left-icon fix-width-of-icon"></div>
                 <div class="divider-middle-content"> </div>
-                <div class="divider-right-icon"></div>
+                <div class="divider-right-icon fix-width-of-icon"></div>
             </div>
             <div class="divider-right-border"></div>
         </div>
@@ -43,16 +43,16 @@
         <div class="divider-section">
             <div class="divider-left-border"></div>
             <div class="divider-center">
-                <div class="divider-icon divider-left-icon">
-                    <img class="icon-small" alt="Vector" src="https://c.animaapp.com/mdc1qaz2EyvGJz/img/vector-6.svg">
+                <div class="divider-icon fix-width-of-icon">
+                    <img class="icon-small" alt="Vector" src="./Assets/vector-svg.svg">
                 </div>
                 <div class="divider-middle-content gradient-line-wraper">
                     <div class="gradient-line-left"></div>
                     <span class="divider-text">It all starts with a</span>
                     <div class="gradient-line-right"></div>
                 </div>
-                <div class="divider-icon divider-right-icon">
-                    <img class="icon-small" alt="Vector" src="https://c.animaapp.com/mdc1qaz2EyvGJz/img/vector-6.svg">
+                <div class="divider-icon fix-width-of-icon">
+                    <img class="icon-small" alt="Vector" src="./Assets/vector-svg.svg">
                 </div>
             </div>
             <div class="divider-right-border"></div>
@@ -62,7 +62,7 @@
         <div class="divider-section">
             <div class="divider-left-border"></div>
             <div class="divider-center">
-                <div class="divider-left-icon"></div>
+                <div class="divider-left-icon fix-width-of-icon"></div>
                 <div class="divider-middle-content">
                     <div class="spark-title">SPARK</div>
                     <!-- Corner dots -->
@@ -71,7 +71,7 @@
                     <div class="about-corner-dot bottom-right-purple"></div>
                     <div class="about-corner-dot bottom-left-purple"></div>
                 </div>
-                <div class="divider-right-icon"></div>
+                <div class="divider-right-icon fix-width-of-icon"></div>
             </div>
             <div class="divider-right-border"></div>
         </div>
@@ -80,7 +80,7 @@
         <div class="divider-section">
             <div class="divider-left-border"></div>
             <div id="hero-discription" class="divider-center">
-                <div class="divider-left-icon"></div>
+                <div class="divider-left-icon fix-width-of-icon"></div>
                 <div class="divider-middle-content description-middle-content">
                     <p class="description-first-line">Empower Your <span class="italic">Web Skills</span> </p>
                     <p class="description-second-line">Ignite Your Path to <span class="italic">Development</span>
@@ -89,7 +89,7 @@
                     <div class="about-corner-dot bottom-right-purple"></div>
                     <div class="about-corner-dot bottom-left-purple"></div>
                 </div>
-                <div class="divider-right-icon"></div>
+                <div class="divider-right-icon fix-width-of-icon"></div>
             </div>
             <div class="divider-right-border"></div>
         </div>
@@ -98,8 +98,8 @@
         <div class="divider-section">
             <div class="divider-left-border"></div>
             <div class="divider-center">
-                <div class="divider-icon divider-left-icon">
-                    <img class="icon-small" alt="Vector" src="https://c.animaapp.com/mdc1qaz2EyvGJz/img/vector-6.svg">
+                <div class="divider-icon fix-width-of-icon">
+                    <img class="icon-small" alt="Vector" src="./Assets/vector-svg.svg">
                 </div>
                 <div class="divider-middle-content oss-button-style ">
                     <button class="gradient-button">Join OSS Club (Opening Soon)</button>
@@ -109,8 +109,8 @@
                     <div class="about-corner-dot bottom-right-purple"></div>
                     <div class="about-corner-dot bottom-left-purple"></div>
                 </div>
-                <div class="divider-icon divider-right-icon">
-                    <img class="icon-small" alt="Vector" src="https://c.animaapp.com/mdc1qaz2EyvGJz/img/vector-6.svg">
+                <div class="divider-icon fix-width-of-icon">
+                    <img class="icon-small" alt="Vector" src="./Assets/vector-svg.svg">
                 </div>
             </div>
             <div class="divider-right-border"></div>
@@ -119,8 +119,25 @@
 
 
     <section class="hero-image-section">
-            <img class="hero-image" src="./Assets/First-Vector.svg" alt="image">
+        <div class="hero-image-container">
+            <!-- Blurred Bottom Image -->
+            <img class="hero-image blurred-image" src="./Assets/First-Vector.svg" alt="blurred image" />
+            <!-- Sharp Top Image -->
+            <img class="hero-image sharp-image" src="./Assets/First-Vector.svg" alt="sharp image" />
+
+            <!-- 
+            <div class="about-spark-header-1">
+                <div class="shape-icon-border-left"></div>
+                <div class="shape-icon-wrapper">
+                    <div class="spark-icon">
+                        <img src="./Assets/First-Vector.svg" alt="">
+                    </div>
+                </div>
+                <div class="shape-icon-border-right"></div>
+            </div> -->
+        </div>
     </section>
+
 
 
     <!-- About Spark Section -->
@@ -217,7 +234,7 @@
                         <div class="timeline-event-left">
                             <div class="date-badge">26 July 2025</div>
                             <img class="timeline-icon" alt="Icons"
-                                src="https://c.animaapp.com/mdc1qaz2EyvGJz/img/icons-9.svg">
+                                src="./Assets/vs-html.svg">
                         </div>
                         <button class="resource-button">
                             <img class="resource-icon-img" alt="Vector" src="./Assets/notes11.svg">
@@ -233,6 +250,106 @@
             </div>
 
             <div class="timeline-content-right-border"></div>
+        </div>
+    </section>
+
+
+    <section class="qr-container">
+        <div class="gap-seprator-between-timeline ">
+            <div class=""></div>
+            <div class="qr-wrapper">
+                <div class="qr-text-button-wrapper">
+                    <p class="qr-text">You never know where one step can take you. Join our WhatsApp community. It might just be the start of something big.</p>
+                    <button class="qr-button">Join Our Community</button>
+                </div>
+                <div class="qr-barcode">
+                    <img src="./Assets/qr-code.svg" alt="qr-code">
+                </div>
+            </div>
+            <div class=""></div>
+        </div>
+    </section>
+
+
+
+    <section class="faq-section">
+        <div class="gap-seprator-between-timeline ">
+            <div class=""></div>
+            <div class="seprator-border"></div>
+            <div class=""></div>
+        </div>
+        <div class="faq-section-column-part ">
+            <div class=""></div>
+            <div class="inquires-faq-button timeline-content ">
+                <div class="inquires-button">Inquires</div>
+                <div class="faqs-button">FAQS</div>
+                <div class="about-corner-dot top-left-purple"></div>
+                <div class="about-corner-dot top-right-purple"></div>
+                <div class="about-corner-dot bottom-right-purple"></div>
+                <div class="about-corner-dot bottom-left-purple"></div>
+            </div>
+            <div class=""></div>
+        </div>
+        <div class="faq-container ">
+            <div class=""></div>
+            <div class="faq-middle-container timeline-content ">
+                <div class="faq faq-1">
+                    <div class="faq-question-wrapper">
+                        <p class="faq-question">What is Spark?</p>
+                        <button class="faq-button">
+                            <img class="faq-button-image" src="./Assets/button.svg" alt="">
+                        </button>
+                        <div class="about-corner-dot bottom-right-purple"></div>
+                        <div class="about-corner-dot bottom-left-purple"></div>
+                    </div>
+                    <p class="faq-answer"></p>
+                </div>
+                <div class="faq faq-2">
+                    <div class="faq-question-wrapper">
+                        <p class="faq-question">Do I need any prior knowledge to attend SPARK classes?</p>
+                        <button class="faq-button">
+                            <img class="faq-button-image" src="./Assets/button.svg" alt="">
+                        </button>
+                        <div class="about-corner-dot bottom-right-purple"></div>
+                        <div class="about-corner-dot bottom-left-purple"></div>
+                    </div>
+                    <p class="faq-answer"></p>
+                </div>
+                <div class="faq faq-3">
+                    <div class="faq-question-wrapper">
+                        <p class="faq-question">Will I get any practical experience or just theory?</p>
+                        <button class="faq-button">
+                            <img class="faq-button-image" src="./Assets/button.svg" alt="">
+                        </button>
+                        <div class="about-corner-dot bottom-right-purple"></div>
+                        <div class="about-corner-dot bottom-left-purple"></div>
+                    </div>
+                    <p class="faq-answer"></p>
+                </div>
+                <div class="faq faq-4">
+                    <div class="faq-question-wrapper">
+                        <p class="faq-question"> Is SPARK only for CS/IT students?</p>
+                        <button class="faq-button">
+                            <img class="faq-button-image" src="./Assets/button.svg" alt="">
+                        </button>
+                        <div class="about-corner-dot bottom-right-purple"></div>
+                        <div class="about-corner-dot bottom-left-purple"></div>
+                    </div>
+                    <p class="faq-answer"></p>
+                </div>
+                <div class="faq faq-5">
+                    <div class="faq-question-wrapper">
+                        <p class="faq-question">What will I be able to do after the classes are completed? </p>
+                        <button class="faq-button">
+                            <img class="faq-button-image" src="./Assets/button.svg" alt="">
+                        </button>
+                        <div class="about-corner-dot bottom-right-purple"></div>
+                        <div class="about-corner-dot bottom-left-purple"></div>
+                    </div>
+                    <p class="faq-answer"></p>
+                </div>
+            </div>
+            <div class=""></div>
         </div>
     </section>
 
