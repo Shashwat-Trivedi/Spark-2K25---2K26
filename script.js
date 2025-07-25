@@ -246,3 +246,26 @@ function initializeScrollAnimations() {
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(initializeScrollAnimations, 1000);
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    for (let i = 1; i <= 5; i++) {
+        let faqButton = document.querySelector(`#faq-${i}`);
+        
+        if (faqButton) {
+            faqButton.addEventListener("click", (e) => {
+                e.preventDefault();
+                
+                // Find the parent FAQ container and then the answer
+                let faqContainer = faqButton.closest('.faq');
+                let faqAnswer = faqContainer.querySelector('.faq-answer');
+                
+                // Toggle the answer visibility
+                faqAnswer.classList.toggle('show');
+                
+                console.log(`FAQ ${i} button clicked`);
+            });
+        }
+    }
+});
