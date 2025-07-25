@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="203" height="204" viewBox="0 0 203 204" fill="none">
+  <circle cx="101.445" cy="102" r="100.722" stroke="#2A2A2A"/>
+  <line x1="102.953" y1="201.5" x2="102.953" y2="1.5" stroke="#2A2A2A" stroke-linecap="round"/>
+  <line x1="1.5" y1="101.5" x2="201.389" y2="101.5" stroke="#2A2A2A" stroke-linecap="round"/>
+  <line x1="0.5" y1="-0.5" x2="199.945" y2="-0.5" transform="matrix(0.708673 -0.705537 0.708673 0.705537 31.1328 173.421)" stroke="#2A2A2A" stroke-linecap="round"/>
+  <line x1="0.5" y1="-0.5" x2="199.945" y2="-0.5" transform="matrix(0.708673 0.705537 -0.708673 0.705537 31.1328 31)" stroke="#2A2A2A" stroke-linecap="round"/>
+  <path d="M102.449 77.5C116.044 77.5001 127.061 88.4712 127.061 102C127.061 115.529 116.044 126.5 102.449 126.5C88.8548 126.5 77.8379 115.529 77.8379 102C77.8379 88.4711 88.8548 77.5 102.449 77.5Z" fill="#111111" stroke="#2A2A2A"/>
+</svg>

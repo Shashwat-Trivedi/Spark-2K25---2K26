@@ -97,7 +97,7 @@ body {
 .divider-center {
     border-right: 1px solid rgba(255, 129, 42, 0.15);
     border-left: 1px solid rgba(255, 129, 42, 0.15);
-    min-width: 500px;
+    min-width: 540px;
     display: grid;
     grid-template-columns: 0.1fr 1fr .1fr;
 
@@ -227,7 +227,7 @@ body {
     }
 
     .divider-center {
-        min-width: 350px;
+        min-width: 400px;
     }
 
     .gradient-line-left,
@@ -306,7 +306,7 @@ body {
 }
 
 .blurred-image {
-    filter: blur(100px) brightness(2) saturate(1.5);
+    filter: blur(200px) brightness(2) saturate(1.5);
     opacity: 1;
     z-index: 1;
 }
