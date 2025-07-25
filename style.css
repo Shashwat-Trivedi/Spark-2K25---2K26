@@ -278,46 +278,46 @@ body {
 /* here start hero image section */
 
 
+
 .hero-image-section {
     width: 100vw;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    /* border: 6px solid yellowgreen; */
+    position: relative;
+    margin-top: 0;  
+    height: auto;
+    inset: auto;
+    z-index: 1;
+}
+
+.hero-image-container {
+    width: 100%;
+    max-width: 900px;
+    /* set an aspect ratio or let content define height */
+    aspect-ratio: 1/1; 
     position: relative;
     overflow: hidden;
 }
 
-.hero-image-container {
-    height: 900px;
-    min-width: 900px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    /* border: 6px solid yellowgreen; */
-    /* min-width: 500px; */
-}
-
-.hero-image {
-    height: 100%;
+.hero-image-container img {
+    display: block;
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    height: 100%;
+    object-fit: cover;     /* crops off any transparent padding */
+    object-position: bottom center;
 }
 
-.blurred-image {
-    filter: blur(200px) brightness(2) saturate(1.5);
-    opacity: 1;
-    z-index: 1;
+.about-spark-section {
+    margin-top: -20vh;
+    position: relative;
+    z-index: 2;/
 }
 
 
-.sharp-image {
-    z-index: 2;
-    /* Optional: Gradually fade out the bottom edge for a soft finish */
-    mask-image: linear-gradient(to bottom, white 80%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, white 80%, transparent 100%);
-}
+
+
 
 .about-spark-header-1 {
     border-top: 1px solid rgba(255, 129, 42, 0.15);
@@ -732,11 +732,11 @@ body {
     position: relative;
 }
 
-.dark-theam-cover{
+.dark-theam-cover {
     position: absolute;
     inset: 0;
     z-index: 2;
-    background-color:rgba(20, 20, 20, 0.5) ;
+    background-color: rgba(20, 20, 20, 0.5);
 }
 
 .event-header {
@@ -891,7 +891,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     gap: 3vw;
-    padding: 20px 0;
+    padding: 20px 10px;
     height: 100%;
     width: 100%;
 }
