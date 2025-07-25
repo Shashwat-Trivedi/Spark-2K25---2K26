@@ -69,7 +69,47 @@ body {
 } */
 
 
+/* nav style start here */
 
+/* bottom fixed navbar */
+.bottom-nav {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    height: 58px;
+    padding: 16px 36px;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    border: 1px solid rgba(254, 129, 44, 0.10);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(50px);
+    z-index: 1000;
+}
+
+.bottom-nav-list {
+    display: flex;
+    gap: 60px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bottom-nav-list a {
+    color: #FFF;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.nav-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #FF0000;
+    border-radius: 50%;
+    margin-right: 4px;
+    vertical-align: middle;
+}
 
 
 /* hero section start here */
@@ -286,7 +326,7 @@ body {
     align-items: center;
     /* border: 6px solid yellowgreen; */
     position: relative;
-    margin-top: 0;  
+    margin-top: 0;
     height: auto;
     inset: auto;
     z-index: 1;
@@ -296,7 +336,7 @@ body {
     width: 100%;
     max-width: 900px;
     /* set an aspect ratio or let content define height */
-    aspect-ratio: 1/1; 
+    aspect-ratio: 1/1;
     position: relative;
     overflow: hidden;
 }
@@ -305,7 +345,8 @@ body {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;     /* crops off any transparent padding */
+    object-fit: cover;
+    /* crops off any transparent padding */
     object-position: bottom center;
 }
 
