@@ -729,6 +729,14 @@ body {
     display: flex;
     flex-direction: column;
     min-width: 500px;
+    position: relative;
+}
+
+.dark-theam-cover{
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background-color:rgba(20, 20, 20, 0.5) ;
 }
 
 .event-header {
