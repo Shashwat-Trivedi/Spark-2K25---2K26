@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Assets/First-Vector.svg" type="image/png">
     <title>SPARK - Empower Your Web Skills</title>
     <link rel="stylesheet" href="styles2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,8 +18,18 @@
     <div class="website-container">
         <div class="website-content">
 
+            <!-- Navbar -->
+
+            <div class="navbar">
+                <a href="#home" class="navbar-item active">Home</a>
+                <a href="#schedule" class="navbar-item">Schedule</a>
+                <a href="#events" class="navbar-item">Events</a>
+                <a href="#faqs" class="navbar-item">FAQs</a>
+            </div>
+
+
             <!-- first Divider -->
-            <div class="divider-section">
+            <div id="home" class="divider-section">
                 <div id="first-divider" class="divider-container">
                     <div class="divider-left-border"></div>
                     <div class="divider-left-icon">
@@ -124,8 +135,9 @@
                     </div>
                     <div class="divider-center">
                         <div class="button-wrapper">
-                            <button class="gradient-button">Join OSS Club (Opening Soon)</button>
-                            <button class="outline-button">
+                            <button id="coming-events" class="gradient-button">Join OSS Club (Opening Soon)</button>
+
+                            <button onclick="window.open('https://www.notion.so/SPARK-2k25-23b57e41319880f8a687c11535fafea0', '_blank')" class="outline-button">
                                 Notes
                                 <img class="button-icon-img" alt="Icon" src="./Assets/notes.svg">
                             </button>
@@ -160,7 +172,7 @@
 
             <!-- hero content -->
             <div class="divider-section">
-                <div id="eigth-divider" class="divider-container">
+                <div id="eight-divider" class="divider-container">
                     <div class="divider-left-border"></div>
                     <div class="content-divider-center">
                         <div class="divider-content">
@@ -182,7 +194,7 @@
             <div class="divider-section">
                 <div id="ninth-divider" class="divider-container">
                     <div class="divider-left-border"></div>
-                    <div id="background-gradient" class="content-divider-center">
+                    <div id="background-gradient" class="content-divider-center padding">
                         <p>
                             <span class="hero-content-opaque">
                                 SPARK is a welcoming program by the Open Source Software Club for first-year students,
@@ -217,6 +229,377 @@
                 </div>
             </div>
 
+            <!-- timeline -->
+            <div id="schedule" class="divider-section">
+                <div id="eigth-divider" class="divider-container">
+                    <div class="divider-left-border"></div>
+                    <div class="content-divider-center">
+                        <div class="divider-content">
+                        </div>
+                    </div>
+                    <div class="divider-right-border"></div>
+                </div>
+            </div>
+
+            <!-- timeline heading -->
+            <div class="divider-section">
+                <div id="events-divider-one" class="divider-container">
+                    <div class="divider-left-border"></div>
+                    <div class="events-divider-center">
+                        <div class="divider-content">
+                            <div class="event-heading-wrapper">
+                                <div class="event-header">Agenda</div>
+                                <div class="event-title">Timeline</div>
+                            </div>
+                        </div>
+                        <!-- Corner dots -->
+                        <div class="corner-dot top-left"></div>
+                        <div class="corner-dot top-right"></div>
+                        <div class="corner-dot bottom-right"></div>
+                        <div class="corner-dot bottom-left"></div>
+                    </div>
+                    <div class="divider-right-border"></div>
+                </div>
+            </div>
+
+            <!-- timeline cards -->
+            <div class="divider-section">
+                <div id="tenth-divider" class="divider-container">
+                    <div class="divider-left-border"></div>
+                    <div class="content-divider-center">
+                        <div class="timeline">
+
+                            <div id="background-gradient" class="timeline-card padding">
+                                <div class="timeline-card-head">
+                                    <div class="timeline-head-flex">
+                                        <div class="timeline-date">
+                                            26 july 2025
+                                        </div>
+                                        <div class="timeline-logo">
+                                            <img class="tech-logo" src="./Assets/SHvscode.png" alt="">
+                                            <img class="tech-logo" src="./Assets/SHhtml.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div onclick="window.open('https://www.notion.so/HTML-23b57e4131988147ba9dff82689561a1', '_blank')" class="notes-button">
+                                        <div>Notes</div>
+                                        <img src="./Assets/notes.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="day-title">
+                                    VS Code & HTML 101
+                                </div>
+                                <div class="day-content">
+                                    In this session, we’ll help you set up VS Code and walk you through the basics of
+                                    HTML. You’ll learn how to write simple tags and understand how web pages are
+                                    structured.
+                                </div>
+                                <!-- Corner dots -->
+                                <div class="corner-dot top-left"></div>
+                                <div class="corner-dot top-right"></div>
+                                <div class="corner-dot bottom-right"></div>
+                                <div class="corner-dot bottom-left"></div>
+                            </div>
+
+                            <div id="background-gradient" class="timeline-card padding">
+                                <div class="timeline-card-head">
+                                    <div class="timeline-head-flex">
+                                        <div class="timeline-date">
+                                            27 july 2025
+                                        </div>
+                                        <div class="timeline-logo">
+
+                                            <img class="tech-logo" src="./Assets/SHhtml.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div onclick="window.open('https://www.notion.so/HTML-23b57e4131988147ba9dff82689561a1', '_blank')" class="notes-button">
+                                        <div>Notes</div>
+                                        <img src="./Assets/notes.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="day-title">
+                                    HTML 102
+                                </div>
+                                <div class="day-content">
+                                    In this session, we’ll help you set up VS Code and walk you through the basics of
+                                    HTML. You’ll learn how to write simple tags and understand how web pages are
+                                    structured.
+                                </div>
+                                <!-- Corner dots -->
+                                <div class="corner-dot top-left"></div>
+                                <div class="corner-dot top-right"></div>
+                                <div class="corner-dot bottom-right"></div>
+                                <div class="corner-dot bottom-left"></div>
+                            </div>
+
+                            <div id="coming-events" class="timeline-card padding">
+                                <div class="timeline-card-head">
+                                    <div class="timeline-head-flex">
+                                        <div class="timeline-date">
+                                            2 August 2025
+                                        </div>
+                                        <div class="timeline-logo">
+
+                                            <img class="tech-logo" src="./Assets/SHhtml.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div onclick="window.open('https://github.com/Shashwat-Trivedi/Spark-2K25---2K26', '_blank')" class="notes-button">
+                                        <div>Notes</div>
+                                        <img src="./Assets/notes.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="day-title">
+                                    HTML 103
+                                </div>
+                                <div class="day-content">
+                                    In this session, we’ll help you set up VS Code and walk you through the basics of
+                                    HTML. You’ll learn how to write simple tags and understand how web pages are
+                                    structured.
+                                </div>
+                                <!-- Corner dots -->
+                                <div class="corner-dot top-left"></div>
+                                <div class="corner-dot top-right"></div>
+                                <div class="corner-dot bottom-right"></div>
+                                <div class="corner-dot bottom-left"></div>
+                            </div>
+
+                            <div id="coming-events" class="timeline-card padding">
+                                <div class="timeline-card-head">
+                                    <div class="timeline-head-flex">
+                                        <div class="timeline-date">
+                                            Upcoming
+                                        </div>
+                                        <div class="timeline-logo">
+
+                                            <img class="tech-logo" src="./Assets/SHcss.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div onclick="window.open('https://github.com/Shashwat-Trivedi/Spark-2K25---2K26', '_blank')" class="notes-button">
+                                        <div>Notes</div>
+                                        <img src="./Assets/notes.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="day-title">
+                                    CSS 101
+                                </div>
+                                <div class="day-content">
+                                    In this session, we’ll help you set up VS Code and walk you through the basics of
+                                    HTML. You’ll learn how to write simple tags and understand how web pages are
+                                    structured.
+                                </div>
+                                <!-- Corner dots -->
+                                <div class="corner-dot top-left"></div>
+                                <div class="corner-dot top-right"></div>
+                                <div class="corner-dot bottom-right"></div>
+                                <div class="corner-dot bottom-left"></div>
+                            </div>
+
+                            <div id="coming-events" class="timeline-card padding">
+                                <div class="timeline-card-head">
+                                    <div class="timeline-head-flex">
+                                        <div class="timeline-date">
+                                            Upcoming
+                                        </div>
+                                        <div class="timeline-logo">
+                                            <img class="tech-logo" src="./Assets/SHcss.png" alt="">
+
+                                        </div>
+                                    </div>
+                                    <div onclick="window.open('https://github.com/Shashwat-Trivedi/Spark-2K25---2K26', '_blank')" class="notes-button">
+                                        <div>Notes</div>
+                                        <img src="./Assets/notes.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="day-title">
+                                    CSS 102
+                                </div>
+                                <div class="day-content">
+                                    In this session, we’ll help you set up VS Code and walk you through the basics of
+                                    HTML. You’ll learn how to write simple tags and understand how web pages are
+                                    structured.
+                                </div>
+                                <!-- Corner dots -->
+                                <div class="corner-dot top-left"></div>
+                                <div class="corner-dot top-right"></div>
+                                <div class="corner-dot bottom-right"></div>
+                                <div class="corner-dot bottom-left"></div>
+                            </div>
+
+                            <div id="coming-events" class="timeline-card padding">
+                                <div class="timeline-card-head">
+                                    <div class="timeline-head-flex">
+                                        <div class="timeline-date">
+                                            Upcoming
+                                        </div>
+                                        <div class="timeline-logo">
+
+                                            <img class="tech-logo" src="./Assets/SHcss.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div onclick="window.open('https://github.com/Shashwat-Trivedi/Spark-2K25---2K26', '_blank')" class="notes-button">
+                                        <div>Notes</div>
+                                        <img src="./Assets/notes.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="day-title">
+                                    CSS 103
+                                </div>
+                                <div class="day-content">
+                                    In this session, we’ll help you set up VS Code and walk you through the basics of
+                                    HTML. You’ll learn how to write simple tags and understand how web pages are
+                                    structured.
+                                </div>
+                                <!-- Corner dots -->
+                                <div class="corner-dot top-left"></div>
+                                <div class="corner-dot top-right"></div>
+                                <div class="corner-dot bottom-right"></div>
+                                <div class="corner-dot bottom-left"></div>
+                            </div>
+
+                            <div id="coming-events" class="timeline-card padding">
+                                <div class="timeline-card-head">
+                                    <div class="timeline-head-flex">
+                                        <div class="timeline-date">
+                                            Upcoming
+                                        </div>
+                                        <div class="timeline-logo">
+                                            <img class="tech-logo" src="./Assets/SHgit.png" alt="">
+                                            <img class="tech-logo" src="./Assets/SHgithub.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div onclick="window.open('https://github.com/Shashwat-Trivedi/Spark-2K25---2K26', '_blank')" class="notes-button">
+                                        <div>Notes</div>
+                                        <img src="./Assets/notes.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="day-title">
+                                    Git and Github
+                                </div>
+                                <div class="day-content">
+                                    In this session, we’ll help you set up VS Code and walk you through the basics of
+                                    HTML. You’ll learn how to write simple tags and understand how web pages are
+                                    structured.
+                                </div>
+                                <!-- Corner dots -->
+                                <div class="corner-dot top-left"></div>
+                                <div class="corner-dot top-right"></div>
+                                <div class="corner-dot bottom-right"></div>
+                                <div class="corner-dot bottom-left"></div>
+                            </div>
+
+                            <div id="coming-events" class="timeline-card padding">
+                                <div class="timeline-card-head">
+                                    <div class="timeline-head-flex">
+                                        <div class="timeline-date">
+                                            Upcoming
+                                        </div>
+                                        <div class="timeline-logo">
+                                            <img class="tech-logo" src="./Assets/SHjs.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div onclick="window.open('https://github.com/Shashwat-Trivedi/Spark-2K25---2K26', '_blank')" class="notes-button">
+                                        <div>Notes</div>
+                                        <img src="./Assets/notes.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="day-title">
+                                    JavaScript 101
+                                </div>
+                                <div class="day-content">
+                                    In this session, we’ll help you set up VS Code and walk you through the basics of
+                                    HTML. You’ll learn how to write simple tags and understand how web pages are
+                                    structured.
+                                </div>
+                                <!-- Corner dots -->
+                                <div class="corner-dot top-left"></div>
+                                <div class="corner-dot top-right"></div>
+                                <div class="corner-dot bottom-right"></div>
+                                <div class="corner-dot bottom-left"></div>
+                            </div>
+
+                            <div id="coming-events" class="timeline-card padding">
+                                <div class="timeline-card-head">
+                                    <div class="timeline-head-flex">
+                                        <div class="timeline-date">
+                                            Upcoming
+                                        </div>
+                                        <div class="timeline-logo">
+                                            <img class="tech-logo" src="./Assets/SHjs.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div onclick="window.open('https://github.com/Shashwat-Trivedi/Spark-2K25---2K26', '_blank')" class="notes-button">
+                                        <div>Notes</div>
+                                        <img src="./Assets/notes.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="day-title">
+                                    JavaScript 102
+                                </div>
+                                <div class="day-content">
+                                    In this session, we’ll help you set up VS Code and walk you through the basics of
+                                    HTML. You’ll learn how to write simple tags and understand how web pages are
+                                    structured.
+                                </div>
+                                <!-- Corner dots -->
+                                <div class="corner-dot top-left"></div>
+                                <div class="corner-dot top-right"></div>
+                                <div class="corner-dot bottom-right"></div>
+                                <div class="corner-dot bottom-left"></div>
+                            </div>
+
+                            <div id="coming-events" class="timeline-card padding">
+                                <div class="timeline-card-head">
+                                    <div class="timeline-head-flex">
+                                        <div class="timeline-date">
+                                            Upcoming
+                                        </div>
+                                        <div class="timeline-logo">
+                                            <img class="tech-logo" src="./Assets/SHjs.png" alt="">
+
+                                        </div>
+                                    </div>
+                                    <div onclick="window.open('https://github.com/Shashwat-Trivedi/Spark-2K25---2K26', '_blank')" class="notes-button">
+                                        <div>Notes</div>
+                                        <img src="./Assets/notes.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="day-title">
+                                    JavaScript 103
+                                </div>
+                                <div class="day-content">
+                                    In this session, we’ll help you set up VS Code and walk you through the basics of
+                                    HTML. You’ll learn how to write simple tags and understand how web pages are
+                                    structured.
+                                </div>
+                                <!-- Corner dots -->
+                                <div class="corner-dot top-left"></div>
+                                <div class="corner-dot top-right"></div>
+                                <div class="corner-dot bottom-right"></div>
+                                <div class="corner-dot bottom-left"></div>
+                            </div>
+
+                        </div>
+                        <!-- Corner dots -->
+                        <div class="corner-dot top-left"></div>
+                        <div class="corner-dot top-right"></div>
+                        <div class="corner-dot bottom-right"></div>
+                        <div class="corner-dot bottom-left"></div>
+                    </div>
+
+                    <div class="divider-right-border"></div>
+                </div>
+            </div>
+
+            <div id="events" class="divider-section">
+                <div id="eigth-divider" class="divider-container">
+                    <div class="divider-left-border"></div>
+                    <div class="content-divider-center">
+                        <div class="divider-content">
+                        </div>
+                    </div>
+                    <div class="divider-right-border"></div>
+                </div>
+            </div>
+
             <!--  events heading -->
             <div class="divider-section">
                 <div id="events-divider-one" class="divider-container">
@@ -228,6 +611,11 @@
                                 <div class="event-title">Events</div>
                             </div>
                         </div>
+                        <!-- Corner dots -->
+                        <div class="corner-dot top-left"></div>
+                        <div class="corner-dot top-right"></div>
+                        <div class="corner-dot bottom-right"></div>
+                        <div class="corner-dot bottom-left"></div>
                     </div>
                     <div class="divider-right-border"></div>
                 </div>
@@ -239,13 +627,13 @@
                     <div class="divider-left-border"></div>
                     <div class="events-divider-center">
                         <div class="events-wrapper">
-                            <div id="background-gradient" class="About-text-block">
+                            <div id="coming-events"  class="About-text-block"> <!-- id="background-gradient" --> 
                                 <div class="event-heading">
                                     <div class="event-logo">
                                         <img class="team-img" src="./Assets/individual.png" alt="">
                                         <div class="event-name">Replica</div>
                                     </div>
-                                    <div class="event-date">19 Aug 2025</div>
+                                    <div class="event-date">Coming Soon</div>
                                 </div>
                                 <div class="event-chart">
                                     <img class="event-img" src="./Assets/Replica.png" alt="">
@@ -260,11 +648,12 @@
                                             accurately, and efficiently as possible within the given time frame.
                                         </div>
                                         <div class="button-wrapper">
-                                            <button class="gradient-button">Register Now</button>
+                                            <button class="gradient-button">Registration will start soon</button>
+                                            <!-- <button class="gradient-button">Register</button>
                                             <button class="outline-button">
                                                 RuleBook
                                                 <img class="button-icon-img" alt="Icon" src="./Assets/notes.svg">
-                                            </button>
+                                            </button> -->
                                         </div>
                                     </div>
                                 </div>
@@ -300,6 +689,9 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Corner dots -->
+                                <div class="corner-dot bottom-right"></div>
+                                <div class="corner-dot bottom-left"></div>
                             </div>
 
                             <div class="eventseperator">
@@ -331,6 +723,9 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Corner dots -->
+                                <div class="corner-dot bottom-right"></div>
+                                <div class="corner-dot bottom-left"></div>
                             </div>
 
                         </div>
@@ -339,8 +734,45 @@
                 </div>
             </div>
 
+            <!-- comunity section -->
             <div class="divider-section">
-                <div id="tenth-divider" class="divider-container">
+                <div id="eigth-divider" class="divider-container">
+                    <div class="divider-left-border"></div>
+                    <div class="content-divider-center">
+                        <div class="divider-content">
+                        </div>
+                    </div>
+                    <div class="divider-right-border"></div>
+                </div>
+            </div>
+
+            <!-- comunity content -->
+            <div class="divider-section">
+                <div id="eigth-divider" class="divider-container">
+                    <div class="divider-left-border"></div>
+                    <div id="qr-data">
+                        <div>
+                            <div class="qr-discription">
+                                You never know where one step can take you. Join our WhatsApp community. It might
+                                just be the start of something big.
+                            </div>
+                            <button onclick="window.open('https://chat.whatsapp.com/Eg2EHjMH0q24emsH5m0lbW', '_blank')" id="community-button" class="gradient-button">Join Our community</button>
+                        </div>
+                        <div>
+                            <img class="qr" src="./Assets/QR-img.png" alt="">
+                        </div>
+                        <!-- Corner dots -->
+                        <div class="corner-dot top-left"></div>
+                        <div class="corner-dot top-right"></div>
+                        <div class="corner-dot bottom-right"></div>
+                        <div class="corner-dot bottom-left"></div>
+                    </div>
+                    <div class="divider-right-border"></div>
+                </div>
+            </div>
+
+            <div id="faqs" class="divider-section">
+                <div id="eigth-divider" class="divider-container">
                     <div class="divider-left-border"></div>
                     <div class="content-divider-center">
                         <div class="divider-content">
@@ -351,18 +783,169 @@
             </div>
 
             <div class="divider-section">
-                <div id="tenth-divider" class="divider-container">
+                <div id="events-divider-one" class="divider-container">
                     <div class="divider-left-border"></div>
-                    <div class="content-divider-center">
+                    <div class="events-divider-center">
                         <div class="divider-content">
+                            <div class="event-heading-wrapper">
+                                <div class="event-header">Inquires</div>
+                                <div class="event-title">FAQS</div>
+                            </div>
                         </div>
+                        <!-- Corner dots -->
+                        <div class="corner-dot top-left"></div>
+                        <div class="corner-dot top-right"></div>
+                        <div class="corner-dot bottom-right"></div>
+                        <div class="corner-dot bottom-left"></div>
                     </div>
                     <div class="divider-right-border"></div>
                 </div>
             </div>
 
             <div class="divider-section">
-                <div id="tenth-divider" class="divider-container">
+                <div id="eigth-divider" class="divider-container">
+                    <div class="divider-left-border"></div>
+                    <div class="content-divider-center">
+
+                        <div class="set">
+
+                            <div class="question">
+                                <div class="question-text">
+                                    What is Spark?
+                                </div>
+                                <div>
+                                    <img class="faq-arrow" src="./Assets/faq-arrow.png" alt="">
+                                </div>
+
+
+                            </div>
+
+                            <div id="deactive" class="answer">SPARK is a beginner-focused web development
+                                program
+                                designed for first-year
+                                students. It helps you learn everything from the ground up — starting with the basics of
+                                HTML, CSS, and JavaScript — and guides you through building real-world projects.
+                            </div>
+                            <!-- Corner dots -->
+                            <div class="corner-dot bottom-right"></div>
+                            <div class="corner-dot bottom-left"></div>
+                            <div class="corner-dot top-left"></div>
+                            <div class="corner-dot top-right"></div>
+                        </div>
+
+                        <div class="set">
+
+                            <div class="question">
+                                <div class="question-text">
+                                    Do I need any prior knowledge to attend SPARK classes?
+                                </div>
+                                <div>
+                                    <img class="faq-arrow" src="./Assets/faq-arrow.png" alt="">
+                                </div>
+
+
+                            </div>
+
+                            <div id="deactive" class="answer">No, SPARK is completely beginner-friendly and
+                                designed for
+                                students with no
+                                prior coding experience. We start from scratch and help you level up step by step.
+                            </div>
+                            <!-- Corner dots -->
+                            <div class="corner-dot bottom-right"></div>
+                            <div class="corner-dot bottom-left"></div>
+                            <div class="corner-dot top-left"></div>
+                            <div class="corner-dot top-right"></div>
+                        </div>
+
+                        <div class="set">
+
+                            <div class="question">
+                                <div class="question-text">
+                                    Will I get any practical experience or just theory?
+                                </div>
+                                <div>
+                                    <img class="faq-arrow" src="./Assets/faq-arrow.png" alt="">
+                                </div>
+
+
+                            </div>
+
+                            <div id="deactive" class="answer">You’ll get plenty of hands-on experience! SPARK is
+                                project-based — you’ll
+                                work on real websites and applications, apply what you learn in class, and build a
+                                portfolio
+                                by the end of the program.
+                            </div>
+                            <!-- Corner dots -->
+                            <div class="corner-dot bottom-right"></div>
+                            <div class="corner-dot bottom-left"></div>
+                            <div class="corner-dot top-left"></div>
+                            <div class="corner-dot top-right"></div>
+                        </div>
+
+                        <div class="set">
+
+                            <div class="question">
+                                <div class="question-text">
+                                    Is SPARK only for CS/IT students?
+                                </div>
+                                <div>
+                                    <img class="faq-arrow" src="./Assets/faq-arrow.png" alt="">
+                                </div>
+
+
+                            </div>
+
+                            <div id="deactive" class="answer">Not at all! SPARK is open to students from all branches
+                                and
+                                backgrounds. If
+                                you’re curious about web development and want to learn something new, you’re welcome to
+                                join.
+                            </div>
+                            <!-- Corner dots -->
+                            <div class="corner-dot bottom-right"></div>
+                            <div class="corner-dot bottom-left"></div>
+                            <div class="corner-dot top-left"></div>
+                            <div class="corner-dot top-right"></div>
+                        </div>
+
+                        <div class="set">
+
+                            <div class="question">
+                                <div class="question-text">
+                                    What will I be able to do after the classes are completed?
+                                </div>
+                                <div>
+                                    <img class="faq-arrow" src="./Assets/faq-arrow.png" alt="">
+                                </div>
+
+
+                            </div>
+
+                            <div id="deactive" class="answer">By the end of SPARK, you’ll be able to build responsive
+                                websites, understand
+                                the basics of web development, and create your own projects. You'll also have a solid
+                                foundation to dive deeper into front-end or full-stack development.
+
+
+                            </div>
+                            <!-- Corner dots -->
+                            <div class="corner-dot bottom-right"></div>
+                            <div class="corner-dot bottom-left"></div>
+                            <div class="corner-dot top-left"></div>
+                            <div class="corner-dot top-right"></div>
+                        </div>
+
+
+                    </div>
+                    <div class="divider-right-border"></div>
+                </div>
+
+            </div>
+
+            <div class="divider-section">
+                <div id="eigth-divider" class="divider-container">
                     <div class="divider-left-border"></div>
                     <div class="content-divider-center">
                         <div class="divider-content">
@@ -373,5 +956,6 @@
             </div>
 
         </div>
-    </div>
+        <script src="script1.js"></script>
 </body>
+</html>
