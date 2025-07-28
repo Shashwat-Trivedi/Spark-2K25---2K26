@@ -9,6 +9,15 @@ html {
     scroll-behavior: smooth;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE and Edge */
+    /* Smooth scrolling with custom timing */
+    scroll-padding-top: 120px; /* Account for navbar */
+}
+
+/* Custom smooth scrolling for specific elements */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
 }
 
 html::-webkit-scrollbar {
