@@ -14,7 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
       if (answer.style.maxHeight === "" || answer.style.maxHeight === "0px") {
         // Show the current answer smoothly
         answer.style.display = "block";
-        answer.style.maxHeight = answer.scrollHeight + "px";
+        // Force a reflow to ensure accurate scrollHeight calculation
+        answer.offsetHeight;
+        // Use a more robust height calculation with extra space for padding and margins
+        const contentHeight = answer.scrollHeight + 60; // Add extra padding for safety
+        answer.style.maxHeight = contentHeight + "px";
         answer.style.opacity = "1";
         answer.style.paddingTop = "24px";
 
@@ -41,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Hide display after animation
             setTimeout(() => {
               otherAnswer.style.display = "none";
-            }, 400);
+            }, 450);
 
             if (otherArrow) {
               otherArrow.style.transform = "rotate(0deg)";
@@ -59,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Hide display after animation completes
         setTimeout(() => {
           answer.style.display = "none";
-        }, 400);
+        }, 450);
 
         // Reset arrow rotation
         if (arrow) {

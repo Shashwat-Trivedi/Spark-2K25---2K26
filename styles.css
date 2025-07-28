@@ -851,8 +851,11 @@ body {
     overflow: hidden;
     max-height: 0;
     opacity: 0;
-    transition: max-height 0.3s ease, opacity 0.3s ease, padding-top 0.3s ease;
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding-top 0.4s ease;
     display: none;
+    /* Ensure content can expand fully */
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 #deactive {
@@ -989,5 +992,24 @@ body {
         border-right: 0px;
     }
 
+    #community-button {
+    width: 100%; 
+    }
 
+
+}
+
+/* First Vector rotation animation */
+@keyframes rotateVector {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.shape-icon-wrapper img[src*="First-Vector"] {
+    animation: rotateVector 20s linear infinite;
+    transform-origin: center;
 }
