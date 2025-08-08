@@ -100,3 +100,58 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// Email functionality with multiple fallback methods
+function openEmailClient() {
+  const email = 'ossclub@aitpune.edu.in';
+  const subject = 'Inquiry about SPARK Program';
+  const body = 'Hello OSS Club Team,\n\nI am interested in learning more about the SPARK program.\n\nThank you!';
+  
+  // Method 1: Try direct window.location for better compatibility
+  try {
+    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    console.log('Email client opened successfully');
+  } catch (error) {
+    console.error('Primary method failed:', error);
+    
+    // Method 2: Try creating a temporary link and clicking it
+    try {
+      const tempLink = document.createElement('a');
+      tempLink.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      tempLink.style.display = 'none';
+      document.body.appendChild(tempLink);
+      tempLink.click();
+      document.body.removeChild(tempLink);
+      console.log('Fallback method worked');
+    } catch (fallbackError) {
+      console.error('Fallback method failed:', fallbackError);
+      
+      // Method 3: If all else fails, copy email to clipboard and show alert
+      copyToClipboard(email);
+      alert(`Please manually send an email to: ${email}\n\nThe email address has been copied to your clipboard.`);
+    }
+  }
+}
+
+// Utility function to copy text to clipboard
+function copyToClipboard(text) {
+  try {
+    // Modern approach
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text);
+    } else {
+      // Fallback approach
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      textArea.style.position = 'fixed';
+      textArea.style.opacity = '0';
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+    }
+  } catch (error) {
+    console.error('Failed to copy to clipboard:', error);
+  }
+}
