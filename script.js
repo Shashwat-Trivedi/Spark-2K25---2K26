@@ -104,9 +104,9 @@ document.addEventListener("DOMContentLoaded", function () {
 // Email functionality with multiple fallback methods
 function openEmailClient() {
   const email = 'ossclub@aitpune.edu.in';
-  const subject = 'Inquiry about SPARK Program';
-  const body = 'Hello OSS Club Team,\n\nI am interested in learning more about the SPARK program.\n\nThank you!';
-  
+  const subject = 'Inquiry';
+  const body = 'Your message here...';
+
   // Method 1: Try direct window.location for better compatibility
   try {
     window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
