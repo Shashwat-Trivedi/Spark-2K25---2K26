@@ -7,10 +7,13 @@
 
 html {
     scroll-behavior: smooth;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
     /* Smooth scrolling with custom timing */
-    scroll-padding-top: 120px; /* Account for navbar */
+    scroll-padding-top: 120px;
+    /* Account for navbar */
 }
 
 /* Custom smooth scrolling for specific elements */
@@ -21,7 +24,8 @@ html {
 }
 
 html::-webkit-scrollbar {
-    display: none; /* Webkit browsers */
+    display: none;
+    /* Webkit browsers */
 }
 
 body {
@@ -100,6 +104,10 @@ body {
     flex-wrap: nowrap;
 }
 
+.dev {
+    display: none;
+}
+
 /* First Divider */
 #first-divider {
     height: 162px;
@@ -149,10 +157,36 @@ body {
     flex-grow: 1;
 }
 
+#tenth-divider {
+    min-height: 60px;
+    flex-grow: 1;
+}
+
+#eleventh-divider {
+    min-height: 184px;
+    flex-grow: 1;
+}
+
 
 .divider-container {
     align-items: stretch;
     /* Make all children same height */
+}
+
+.end {
+    height: 185px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.end-image {
+    width: 450px;
+    height: auto;
+    position: absolute;
+    top: -60px;
+    z-index: 3;
 }
 
 .padding {
@@ -353,6 +387,7 @@ body {
 }
 
 .button-wrapper {
+    height: 100%;
     display: flex;
     width: 100%;
     padding: 20px 24px;
@@ -472,7 +507,7 @@ body {
     line-height: 140%;
 }
 
-.base-image {
+.base-image , .box-imag {
     width: 1310px;
     position: absolute;
     top: 500px;
@@ -586,8 +621,8 @@ body {
     /* 25% of original size = 1x from 4x */
     height: 350px;
     /* Maintains aspect ratio */
-        border-right: 1px solid #2A2A2A;
-    
+    border-right: 1px solid #2A2A2A;
+
 }
 
 .team-img {
@@ -876,7 +911,69 @@ body {
 }
 
 
+.footer-heading {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+
+.footer-discription {
+    max-width: 655px;
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.8;
+}
+
+
+.footer-heading-text {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contact-text {
+    Color: #FFF;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "DM Sans";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    /* 67.2px */
+    letter-spacing: 2px;
+}
+
+.box-image {
+    width: 1310px;
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    /* Center horizontally and crop equally from both sides */
+}
+
+
+
 @media (max-width:750px) {
+
+    .dev {
+        display: contents;
+    }
 
     .divider-center {
         max-width: 350px;
@@ -931,7 +1028,7 @@ body {
 
     .outline-button,
     .gradient-button {
-        width: 100%;
+        width: 100% ;
     }
 
     .base-image {
@@ -950,7 +1047,10 @@ body {
         max-width: 350px;
     }
 
-    .timeline-logo {
+    .timeline-logo,
+    .qr,
+    .navbar,
+    .mobile {
         display: none;
     }
 
@@ -970,13 +1070,6 @@ body {
         gap: 0px;
     }
 
-    .qr {
-        display: none;
-    }
-
-    .navbar {
-        display: none;
-    }
 
     .base-image {
         width: 850px;
@@ -1002,9 +1095,35 @@ body {
     }
 
     #community-button {
-    width: 100%; 
+        width: 100%;
     }
 
+    .footer-discription {
+        padding: 16px;
+        color: #FFF;
+        text-align: center;
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        opacity: 1;
+        /* 22.4px */
+    }
+
+    #eleventh-divider {
+    min-height: 60px;
+    flex-grow:
+     1;
+}
+
+ .end-image {
+    width: 450px;
+    height: auto;
+    position: absolute;
+    top: -43px;
+    z-index: 3;
+}
 
 }
 
@@ -1013,6 +1132,7 @@ body {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(-360deg);
     }
