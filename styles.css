@@ -860,6 +860,25 @@ body {
     transition: color 0.2s ease;
 }
 
+/* Remove blue tap highlight and outline for FAQ items on mobile */
+.question,
+.question:focus,
+.question:active,
+.question-text,
+.question-text:focus,
+.question-text:active,
+.faq-arrow,
+.faq-arrow:focus,
+.faq-arrow:active {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .faq-arrow {
     width: 24px;
     height: auto;
